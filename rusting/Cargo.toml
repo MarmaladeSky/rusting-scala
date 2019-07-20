@@ -1,0 +1,11 @@
+[package]
+name = "rusting"
+version = "0.1.0"
+authors = ["Alexey Kislin <alexey.kislin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+jni = { git = "https://github.com/prevoty/jni-rs" }
+
+[lib]
+crate_type = ["dylib"]
