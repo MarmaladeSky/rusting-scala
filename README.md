@@ -1,18 +1,6 @@
 # Example of Scala to Rust binding via JNI
 
-## Build
-
-### Generate header files
+## Build and run
 ```
-$ sbt javah
-```
-
-### Build rust library
-```
-$ cargo build --release
-```
-
-### Run
-```
-$ sbt run
+$ sbt javah && cargo build --release --manifest-path=rusting/Cargo.toml && sbt run
 ```
